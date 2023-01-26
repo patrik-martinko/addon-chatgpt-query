@@ -9,5 +9,5 @@ if (value) {
 			clearInterval(interval);
 			input.nextSibling.click();
 		}
-	}, 100);
+	}, 500);
 }
