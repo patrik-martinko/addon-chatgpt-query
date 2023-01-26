@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "ChatGPT Shortcut",
+    "description": "The extension adds the ability to query ChatGPT by OpenAI directly via links with the GET parameter named 'q'. This is especially useful when you use search bars like Alfred, Spotlight, Flow Launcher, Wox ...",
+    "version": "1.0.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://chat.openai.com/*"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ],
+    "icons": {
+        "16": "icon-16.png",
+        "48": "icon-48.png",
+        "128": "icon-128.png"
+    }
+}
