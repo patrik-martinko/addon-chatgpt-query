@@ -14,4 +14,4 @@ Structure of query: `https://chat.openai.com/chat?q={query}`
 ![](screencast.gif)
 
 ## Permalink
-![](screenshot.jpg)
+![](screenshot-firefox.jpg)
