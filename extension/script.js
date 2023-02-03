@@ -1,12 +1,11 @@
-const input = document.querySelector('[data-id="root"]');
-let value = (new URLSearchParams(location.search)).get('q');
-if (value) {
-	value = decodeURIComponent(value);
+let query = (new URLSearchParams(location.search)).get('q');
+if (query) {
+	query = decodeURIComponent(query);
 	const interval = setInterval(() => {
-		if (input.textContent !== value) {
-			input.textContent = value;
-		} else {
+		const input = document.querySelector('[data-id="root"]');
+		if (input) {
 			clearInterval(interval);
+			input.textContent = query;
 			input.nextSibling.click();
 		}
 	}, 500);
