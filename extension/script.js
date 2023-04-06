@@ -3,10 +3,11 @@ if (query) {
 	query = decodeURIComponent(query);
 	const interval = setInterval(() => {
 		const input = document.querySelector('[data-id="root"]');
-		if (input) {
-			clearInterval(interval);
-			input.textContent = query;
+		if (input.value === query) {
+			input.nextSibling.removeAttribute('disabled');
 			input.nextSibling.click();
+			clearInterval(interval);
 		}
+		input.value = query;
 	}, 500);
 }
