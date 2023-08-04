@@ -5,7 +5,7 @@ if (query) {
 		const input = document.querySelector('[data-id="root"]');
 		if (input) {
 			if (input.value === query) {
-				input.nextSibling.removeAttribute('disabled');
+				input.dispatchEvent(new Event('input', { bubbles: true }));
 				input.nextSibling.click();
 				clearInterval(interval);
 			}

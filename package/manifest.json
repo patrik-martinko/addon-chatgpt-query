@@ -2,7 +2,7 @@
     "manifest_version": 3,
     "name": "ChatGPT Shortcut",
     "description": "The extension adds the ability to query ChatGPT outside of the website automatically via links with the GET parameter named 'q'.",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "content_scripts": [
         {
             "matches": [
