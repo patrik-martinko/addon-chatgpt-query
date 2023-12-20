@@ -6,6 +6,7 @@ if (query) {
 		if (input) {
 			if (input.value === query) {
 				input.dispatchEvent(new Event('input', { bubbles: true }));
+				input.nextSibling.removeAttribute('disabled');
 				input.nextSibling.click();
 				clearInterval(interval);
 			}
